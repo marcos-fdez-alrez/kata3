@@ -5,9 +5,6 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import java.util.Arrays;
-import java.util.List;
-
 public class MathUtilsTest {
 
     private static final Integer[] MULT = new Integer[]{3,5};

@@ -1,9 +1,5 @@
 import es.vass.kata3.MathUtils;
 
-import java.util.Optional;
-import java.util.OptionalLong;
-import java.util.stream.Stream;
-
 public class Launcher {
 
     public static void main(String...args) {

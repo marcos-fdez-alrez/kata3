@@ -1,12 +1,9 @@
 package es.vass.kata3;
 
 import java.util.Arrays;
-import java.util.function.Function;
-import java.util.function.IntPredicate;
 import java.util.function.Predicate;
-import java.util.stream.*;
-import java.util.List;
-import java.util.stream.Collectors;
+import java.util.stream.LongStream;
+import java.util.stream.Stream;
 
 public class MathUtils {
 
