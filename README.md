@@ -44,4 +44,4 @@ gradlew clean package
 gradlew clean test
 ```
 
-
+![Java CI with Gradle](https://github.com/marcos-fdez-alrez/kata3/workflows/Java%20CI%20with%20Gradle/badge.svg)
