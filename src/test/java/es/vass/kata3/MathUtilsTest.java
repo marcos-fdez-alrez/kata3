@@ -16,8 +16,8 @@ public class MathUtilsTest {
     private static final List<Integer> SOLUTION_UNDER_TEN = Arrays.asList(new Integer[]{3, 5, 6, 9});
     private static final Integer SUM_SOLUTION_UNDER_TEN = 23;
 
-    private static final Integer HUNDRED_LIMIT = 100;
-    private static final Long SUM_SOLUTION_UNDER_HUNDRED = 233168L;
+    private static final Integer THOUSAND_LIMIT = 1000;
+    private static final Long SUM_SOLUTION_UNDER_THOUSAND = 233168L;
 
     @DisplayName("Test MathUtils.findMultiplesUnder using 10 as limit and 3 and 5 as multiples")
     @Test
@@ -27,11 +27,11 @@ public class MathUtilsTest {
         assertEquals(SUM_SOLUTION_UNDER_TEN,multiples.stream().reduce(0, (a, b) -> a + b));
     }
 
-    @DisplayName("Test MathUtils.findMultiplesUnder using 100 as limit and 3 and 5 as multiples")
+    @DisplayName("Test MathUtils.findMultiplesUnder using 1000 as limit and 3 and 5 as multiples")
     @Test
-    void testMultiplesUnderHundred() {
-        List<Integer> multiples = MathUtils.findMultiplesUnder(HUNDRED_LIMIT, MULT);
-        assertEquals(SUM_SOLUTION_UNDER_HUNDRED,multiples.stream().reduce(0, (a, b) -> a + b));
+    void testMultiplesUnderThousand() {
+        List<Integer> multiples = MathUtils.findMultiplesUnder(THOUSAND_LIMIT, MULT);
+        assertEquals(SUM_SOLUTION_UNDER_THOUSAND,multiples.stream().reduce(0, (a, b) -> a + b).longValue());
 
     }
 
