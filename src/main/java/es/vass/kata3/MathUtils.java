@@ -16,4 +16,9 @@ public class MathUtils {
         return IntStream.range(1,limit).filter(predicate)
                 .boxed().collect(Collectors.toList());
     }
+
+    public static Long fibonacciEvenSumUnder(Long limit) {
+        // TODO: pending implementing
+        return null;
+    }
 }

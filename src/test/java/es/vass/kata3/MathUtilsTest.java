@@ -17,7 +17,10 @@ public class MathUtilsTest {
     private static final Integer SUM_SOLUTION_UNDER_TEN = 23;
 
     private static final Integer THOUSAND_LIMIT = 1000;
-    private static final Long SUM_SOLUTION_UNDER_THOUSAND = 233168L;
+    private static final Long SUM_SOLUTION_UNDER_THOUSAND = 233_168L;
+
+    private static final Long FIBONACCI_LIMIT = 4_000_000L;
+    private static final Long SUM_FIBONACCI_EVEN_UNDER_FOUR_MILLIONS = 4_613_732L;
 
     @DisplayName("Test MathUtils.findMultiplesUnder using 10 as limit and 3 and 5 as multiples")
     @Test
@@ -35,5 +38,10 @@ public class MathUtilsTest {
 
     }
 
+    @DisplayName("Test MathUtils.fibonacciEvenSumUnder 4 million")
+    @Test
+    void testFibonacciEvenSumUnder() {
+        assertEquals(SUM_FIBONACCI_EVEN_UNDER_FOUR_MILLIONS,MathUtils.fibonacciEvenSumUnder(FIBONACCI_LIMIT));
+    }
 
 }
